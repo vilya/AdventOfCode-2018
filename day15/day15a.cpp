@@ -245,9 +245,9 @@ int main(int argc, char** argv)
   map.load(f);
   fclose(f);
 
-  printf("Initially:\n");
-  map.print_map();
-  printf("\n");
+//  printf("Initially:\n");
+//  map.print_map();
+//  printf("\n");
 
   int i = 0;
   while (map.tick()) {
@@ -257,10 +257,10 @@ int main(int argc, char** argv)
 //    printf("\n");
   }
 
-  printf("After %d rounds:\n", i);
-  map.print_map();
-  printf("\n");
-  map.print_units();
+//  printf("After %d rounds:\n", i);
+//  map.print_map();
+//  printf("\n");
+//  map.print_units();
 
   int result = i * map.sum_of_remaining_hit_points();
   printf("Answer = %d\n", result);

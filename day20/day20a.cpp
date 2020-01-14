@@ -205,7 +205,7 @@ int main(int argc, char** argv)
   map.load(f);
   fclose(f);
 
-  map.print();
+//  map.print();
 
   printf("Furthest room requires opening %d doors\n", map.solve());
 }

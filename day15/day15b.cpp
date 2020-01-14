@@ -252,7 +252,7 @@ int main(int argc, char** argv)
   int elf_attack_power = 4;
   int outcome = 0;
   while (true) {
-    printf("Trying elf attack power = %d\n", elf_attack_power);
+//    printf("Trying elf attack power = %d\n", elf_attack_power);
 
     Map localMap = map;
     localMap.elf_power = elf_attack_power;

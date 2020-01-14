@@ -104,6 +104,6 @@ struct Map {
 int main()
 {
   Map map;
-  map.print();
+//  map.print();
   printf("Risk level = %d\n", map.risk_level());
 }

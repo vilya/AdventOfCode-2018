@@ -149,9 +149,9 @@ int main(int argc, char** argv)
   fclose(f);
   fast_grids[0].copy(grids[0]);
 
-  printf("Initial state:\n");
-  grids[0].print();
-  printf("\n");
+//  printf("Initial state:\n");
+//  grids[0].print();
+//  printf("\n");
 
   const int kNumIters = 1'000'000'000;
 
@@ -188,8 +188,8 @@ int main(int argc, char** argv)
     src = dst;
   }
 
-  printf("After %d minutes:\n", kNumIters);
-  grids[src].print();
-  printf("\n");
+//  printf("After %d minutes:\n", kNumIters);
+//  grids[src].print();
+//  printf("\n");
   printf("Result = %d\n", grids[src].resource_value());
 }

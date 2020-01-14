@@ -71,15 +71,15 @@ int main(int argc, char** argv)
   }
   fclose(f);
 
-  show_rules(rules);
+//  show_rules(rules);
 
   int src = 0;
-  show(states[src], lo - 40, hi + 40);
+//  show(states[src], lo - 40, hi + 40);
   for (int i = 0; i < 20; i++) {
     int dst = src ^ 1;
     evolve(states[src], rules, lo - i * 2, hi + i * 2, states[dst]);
     src = dst;
-    show(states[src], lo - 40, hi + 40);
+//    show(states[src], lo - 40, hi + 40);
   }
 
   int sum = 0;

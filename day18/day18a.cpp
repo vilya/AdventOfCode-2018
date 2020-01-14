@@ -123,9 +123,9 @@ int main(int argc, char** argv)
   grids[0].load(f);
   fclose(f);
 
-  printf("Initial state:\n");
-  grids[0].print();
-  printf("\n");
+//  printf("Initial state:\n");
+//  grids[0].print();
+//  printf("\n");
 
   int src = 0;
   for (int i = 1; i <= 10; i++) {
@@ -133,9 +133,9 @@ int main(int argc, char** argv)
     grids[src].evolve_to(grids[dst]);
     src = dst;
 
-    printf("After %d minutes:\n", i);
-    grids[src].print();
-    printf("\n");
+//    printf("After %d minutes:\n", i);
+//    grids[src].print();
+//    printf("\n");
   }
 
   printf("Result = %d\n", grids[src].resource_value());

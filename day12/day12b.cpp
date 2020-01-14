@@ -71,16 +71,16 @@ int main(int argc, char** argv)
   }
   fclose(f);
 
-  show_rules(rules);
+//  show_rules(rules);
 
   const int generations = 150;
   int src = 0;
-  show(states[src], lo, hi + generations);
+//  show(states[src], lo, hi + generations);
   for (int i = 0; i < generations; i++) {
     int dst = src ^ 1;
     evolve(states[src], rules, lo, hi + i, states[dst]);
     src = dst;
-    show(states[src], lo, hi + generations);
+//    show(states[src], lo, hi + generations);
   }
 
   int sum = 0;

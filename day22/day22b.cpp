@@ -186,6 +186,6 @@ struct Map {
 int main()
 {
   Map map;
-  map.print();
+//  map.print();
   printf("Quickest rescue is %d mins\n", map.quickest_rescue());
 }

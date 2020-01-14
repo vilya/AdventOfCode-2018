@@ -154,7 +154,7 @@ int main(int argc, char** argv)
   fclose(f);
 
   map.add_water_down(map.start);
-  map.print();
+//  map.print();
 
   printf("Water reaches %d cells\n", map.wet_cells());
 }

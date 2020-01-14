@@ -94,9 +94,9 @@ void print_target_summary(const char* name, const std::vector<Group*>& team)
 
 void fight(std::vector<Group*>& immune_system, std::vector<Group*>& infection)
 {
-  print_team("Immune System", immune_system);
-  print_team("Infection", infection);
-  printf("\n");
+  // print_team("Immune System", immune_system);
+  // print_team("Infection", infection);
+  // printf("\n");
 
   const int kImmuneSystemSize = int(immune_system.size());
   const int kInfectionSize = int(infection.size());
@@ -140,9 +140,9 @@ void fight(std::vector<Group*>& immune_system, std::vector<Group*>& infection)
       attacker->target->targetted_by = attacker;
   }
 
-  print_target_summary("Infection", infection);
-  print_target_summary("Immune System", immune_system);
-  printf("\n");
+  // print_target_summary("Infection", infection);
+  // print_target_summary("Immune System", immune_system);
+  // printf("\n");
 
   // Attacking
   std::sort(order.begin(), order.end(), attack_order);
@@ -155,12 +155,12 @@ void fight(std::vector<Group*>& immune_system, std::vector<Group*>& infection)
     int killed = damage / attacker->target->hp;
     attacker->target->count -= killed;
 
-    printf("%s group %d attacks defending group %d, killing %d units\n",
-           attacker->team == kImmuneSystem ? "Immune System" : "Infection",
-           attacker->id, attacker->target->id, killed);
+    // printf("%s group %d attacks defending group %d, killing %d units\n",
+    //        attacker->team == kImmuneSystem ? "Immune System" : "Infection",
+    //        attacker->id, attacker->target->id, killed);
   }
-  printf("\n");
-  printf("\n");
+  // printf("\n");
+  // printf("\n");
 
   // The aftermath...
   remove_the_bodies(immune_system);
