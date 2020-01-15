@@ -1,9 +1,6 @@
 #include <cstdio>
-#include <map>
 #include <queue>
-#include <set>
-#include <utility>
-
+#include <vector>
 
 struct ivec2 {
   int x, y;
@@ -132,7 +129,7 @@ struct Map {
     assert(terrain_cache[0][0] == kRocky || terrain_cache[0][0] == kNarrow);
 
     // BFS where the state is the current position *and* which tool is equipped.
-    std::priority_queue<Work, std::deque<Work>, std::greater<Work>> q;
+    std::priority_queue<Work, std::vector<Work>, std::greater<Work>> q;
 
     q.push(Work{0, kTorch, kStart});
     while (!q.empty()) {
